@@ -18,7 +18,7 @@ const articleSchema = {
     content: String
 };
 
-const Article = mongoose.model('Article', articleSchema);
+const Article = new mongoose.model('Article', articleSchema);
 
 ////////////Requests targeting all articles
 app.route('/articles')
